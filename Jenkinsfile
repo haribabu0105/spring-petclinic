@@ -10,7 +10,7 @@ pipeline {
 
           stage ('Docker build'){
               steps {
-                sh 'docker build -t spring-petclinic:latest.'
+                sh 'docker build -t spring-petclinic:latest .'
         }
     }
   }
