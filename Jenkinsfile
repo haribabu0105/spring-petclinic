@@ -5,6 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main',
+                credentialsId: 'github-ssh-privatekey',
                 url: 'git@github.com:haribabu0105/spring-petclinic.git'
             }
         }
